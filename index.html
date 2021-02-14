@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&family=Work+Sans&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div class="calc">
+            <div class="calc-header">
+                <input id="output">
+            </div>
+            <div class="calc-body">
+                <div class="row-1">
+                    <li><input type="button" value="C" onclick="clean()"></li>
+                    <li><input type="button" value="%" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="/" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="*" onclick="enter(this.value)"></li>
+                </div>
+                <div class="row-2">
+                    <li><input type="button" value="7" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="8" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="9" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="-" onclick="enter(this.value)"></li>
+                </div>
+                <div class="row-3">
+                    <li><input type="button" value="4" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="5" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="6" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="+" onclick="enter(this.value)"></li>
+                </div>
+                <div class="row-4">
+                    <li><input type="button" value="1" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="2" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="3" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="=" name="eval" onclick="calculate()"></li>
+                </div>
+                <div class="row-5">
+                    <li><input type="button" value="." name="btm" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="0" name="btm" onclick="enter(this.value)"></li>
+                    <li><input type="button" value="00" name="btm" onclick="enter(this.value)"></li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./calc.js"></script>
+
+</body>
+</html> 
